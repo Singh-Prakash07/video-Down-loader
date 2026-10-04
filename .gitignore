@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node / Vite
+node_modules/
+dist/
+
+# Runtime downloads and local settings
+backend/downloads/
+.env
+.env.*
+!.env.example
+
+# Editors / operating systems
+.DS_Store
+.vscode/

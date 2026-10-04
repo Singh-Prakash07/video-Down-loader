@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #f7f6fa;
+  background: #101426;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; background: #101426; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+
+.page-shell { min-height: 100vh; overflow: hidden; background: radial-gradient(circle at 92% 6%, #2d2853 0, transparent 28rem), #101426; }
+.hero { position: relative; min-height: 350px; max-width: 1160px; margin: 0 auto; padding: 34px 48px 68px; overflow: hidden; }
+.brand { position: relative; z-index: 1; display: inline-flex; gap: 10px; align-items: center; color: #faf9fc; font-size: 14px; font-weight: 700; letter-spacing: .07em; text-decoration: none; }
+.brand > span:last-child span { color: #9e8cff; }
+.brand-mark { display: grid; width: 27px; height: 27px; place-items: center; border-radius: 8px; background: #a692ff; color: #17142b; font-size: 20px; font-weight: 700; line-height: 1; }
+.hero-copy { position: relative; z-index: 1; max-width: 660px; margin-top: 56px; }
+.eyebrow { margin: 0 0 10px; color: #a99ef5; font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: .14em; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { max-width: 710px; margin-bottom: 17px; color: #fff; font-size: clamp(43px, 5.7vw, 71px); letter-spacing: -.06em; line-height: .99; }
+h1 em { color: #b1a2ff; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; letter-spacing: -.055em; }
+.intro { max-width: 545px; margin: 0; color: #b6b6c7; font-size: 16px; line-height: 1.65; }
+.orb { position: absolute; border-radius: 50%; filter: blur(1px); pointer-events: none; }
+.orb-one { top: 83px; right: 112px; width: 246px; height: 246px; border: 1px solid rgba(177, 162, 255, .25); box-shadow: inset 0 0 60px rgba(139, 113, 255, .13), 0 0 90px rgba(119, 94, 235, .12); }
+.orb-two { top: 158px; right: 235px; width: 80px; height: 80px; background: linear-gradient(135deg, rgba(234, 213, 255, .8), rgba(131, 109, 252, .25)); box-shadow: 0 0 65px #9b83ff; opacity: .85; }
+
+.download-panel, .jobs-section { max-width: 1064px; margin: 0 auto; }
+.download-panel { position: relative; z-index: 2; margin-top: -34px; padding: 31px 34px 25px; border: 1px solid rgba(190, 178, 255, .16); border-radius: 18px; background: #1a1e34; box-shadow: 0 24px 55px rgba(4, 7, 19, .27); }
+.panel-heading, .section-heading, .format-header, .form-footer, .job-title-row, .progress-wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.panel-heading { margin-bottom: 23px; }
+h2 { margin-bottom: 0; color: #fdfcff; font-size: 24px; letter-spacing: -.04em; }
+.local-note { display: flex; align-items: center; gap: 8px; color: #a5a4b7; font-size: 13px; }
+.local-note i { display: block; width: 7px; height: 7px; border-radius: 50%; background: #7ce0a1; box-shadow: 0 0 0 4px rgba(124, 224, 161, .12); }
+label { display: block; margin-bottom: 9px; color: #d9d8e6; font-size: 13px; font-weight: 600; }
+.url-row { display: flex; align-items: center; overflow: hidden; border: 1px solid #414561; border-radius: 10px; background: #13172a; transition: border-color .2s, box-shadow .2s; }
+.url-row:focus-within { border-color: #9b8bfa; box-shadow: 0 0 0 3px rgba(158, 140, 255, .15); }
+.link-icon { padding-left: 15px; color: #9b8bfa; font-size: 21px; transform: rotate(45deg); }
+input, select { width: 100%; border: 0; outline: 0; color: #f5f3ff; background: transparent; }
+input { padding: 15px 16px 15px 12px; font-size: 15px; }
+input::placeholder { color: #777990; }
+.format-header { margin-top: 21px; }
+.format-header span { color: #89899d; font-size: 12px; }
+select { padding: 14px 15px; border: 1px solid #414561; border-radius: 10px; background: #13172a; color: #e7e5f3; font-size: 14px; }
+select:focus { border-color: #9b8bfa; }
+select option { background: #1a1e34; }
+.form-error { margin: 15px 0 0; color: #ffabb6; font-size: 13px; }
+.form-footer { margin-top: 21px; }
+.form-footer p { max-width: 500px; margin-bottom: 0; color: #89899d; font-size: 12px; line-height: 1.5; }
+button, .save-button { display: inline-flex; min-width: 166px; align-items: center; justify-content: center; gap: 14px; padding: 13px 17px; border: 0; border-radius: 9px; background: #ab97ff; color: #17132d; font-size: 14px; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; }
+button:hover:not(:disabled), .save-button:hover { background: #c1b2ff; transform: translateY(-1px); }
+button:disabled { cursor: wait; opacity: .64; }
+
+.jobs-section { padding: 47px 12px 65px; }
+.section-heading { margin-bottom: 19px; }
+.job-count { padding: 6px 10px; border-radius: 99px; background: #252941; color: #aaa9ba; font-family: 'DM Mono', monospace; font-size: 11px; }
+.empty-state { display: grid; min-height: 218px; place-content: center; justify-items: center; border: 1px dashed #41445e; border-radius: 15px; background: rgba(31, 35, 56, .5); text-align: center; }
+.empty-icon { display: grid; width: 39px; height: 39px; margin-bottom: 12px; place-items: center; border-radius: 50%; background: #292d48; color: #a99df3; font-size: 23px; }
+.empty-state h3 { margin-bottom: 7px; font-size: 16px; }
+.empty-state p { margin: 0; color: #9191a4; font-size: 13px; }
+.job-list { display: grid; gap: 10px; }
+.job-card { display: flex; gap: 16px; align-items: flex-start; padding: 18px; border: 1px solid #333751; border-radius: 13px; background: #181c30; }
+.status-dot { flex: 0 0 auto; width: 9px; height: 9px; margin-top: 7px; border-radius: 50%; background: #a7a5b4; }
+.status-dot.downloading { background: #ad9aff; box-shadow: 0 0 0 4px rgba(173, 154, 255, .12); }
+.status-dot.complete { background: #7ce0a1; }.status-dot.failed { background: #ff8997; }
+.job-content { min-width: 0; flex: 1; }.job-title-row { align-items: flex-start; }
+.job-title-row h3 { overflow: hidden; margin-bottom: 3px; color: #f5f3fb; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; }
+.source-url { overflow: hidden; margin-bottom: 12px; color: #9494a6; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.status { flex: 0 0 auto; padding: 4px 8px; border-radius: 99px; color: #a5a3b2; background: #292d43; font-family: 'DM Mono', monospace; font-size: 10px; }
+.status-downloading { color: #c6baff; background: rgba(172, 151, 255, .13); }.status-complete { color: #8ae5aa; background: rgba(112, 218, 149, .12); }.status-failed { color: #ffadb6; background: rgba(255, 118, 134, .12); }
+.progress-wrap { max-width: 410px; justify-content: initial; color: #b9b7c7; font-family: 'DM Mono', monospace; font-size: 11px; }.progress-bar { height: 5px; flex: 1; overflow: hidden; border-radius: 99px; background: #34384f; }.progress-bar span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #937ef3, #c5b7ff); transition: width .4s; }
+.job-error { margin: 0; color: #ffabb6; font-size: 12px; line-height: 1.45; }.save-button { min-width: auto; margin-left: 7px; padding: 10px 13px; font-size: 12px; }
+footer { padding: 18px; border-top: 1px solid rgba(126, 126, 150, .15); color: #77788c; font-size: 12px; text-align: center; }
+
+@media (max-width: 720px) {
+  .hero { min-height: 330px; padding: 25px 22px 52px; }.hero-copy { margin-top: 53px; }.orb-one { right: -105px; top: 60px; }.orb-two { right: 42px; top: 160px; opacity: .5; }.download-panel { margin: -20px 13px 0; padding: 24px 20px; }.jobs-section { padding: 40px 20px 54px; }.panel-heading { align-items: flex-start; }.local-note { display: none; }.form-footer { align-items: flex-start; flex-direction: column; }.form-footer button { width: 100%; }.job-card { gap: 11px; padding: 14px; }.job-title-row { gap: 8px; flex-direction: column; }.save-button { align-self: center; }.progress-wrap { max-width: none; }.intro { font-size: 14px; }
+}
+
+@media (max-width: 420px) { h1 { font-size: 39px; }.format-header span { display: none; }.job-card { flex-wrap: wrap; }.job-content { width: calc(100% - 22px); flex-basis: calc(100% - 22px); }.save-button { width: 100%; margin-left: 20px; } }
