@@ -1,8 +1,6 @@
 # Video Downloader
 
-A simple full-stack video download dashboard built with FastAPI and React + TypeScript.
-
-> Only download media you own or are authorised to download, and comply with the source platform's terms of service and applicable law.
+A simple video download dashboard built with FastAPI and React + TypeScript.
 
 ## Project layout
 
@@ -41,4 +39,4 @@ Open the URL Vite prints (normally `http://localhost:5173`).
 
 Copy `frontend/.env.example` to `frontend/.env` to point the web app at a different API URL. The default is `http://localhost:8000`.
 
-Completed files are stored locally in `backend/downloads/`. Jobs are held in memory, so their history resets when the API restarts. This makes the starter easy to run; use a database and object storage before deploying it for multiple users.
+Completed files are stored locally in `backend/downloads/`. Jobs are held in memory, so their history resets when the API restarts. This makes the starter easy to run.
